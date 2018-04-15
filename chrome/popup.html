@@ -1,0 +1,67 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="utf-8">
+    <title>Getting Started Extension's Popup</title>
+    
+    <style type="text/css"/>
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    
+  </head>
+
+  <body>
+
+
+<!--
+    <label for="">Name</label><br><input type="text" id="name"> <br> 
+     <label for="">Details</label><textarea id="details"></textarea> 
+    <input id="clickme" name="myBtn" type="submit" value="click me">-->
+    <script src="popup.js"></script> 
+
+    <h1>Background Color Changer</h1>
+
+      <div id="rating">
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+      </div>
+
+    <div id="container">
+      <form id="myForm">
+        <label for="myName">Send me a value:</label>
+        <input id="myName" name="name" value="0">
+        <input type="submit" value="Send Me!">
+      </form>
+    </div>
+
+  </body>
+</html>
